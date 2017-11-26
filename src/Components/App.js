@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Content from './Content';
+import Navbar from './Navbar';
 
 class App extends React.Component {
     constructor () {
@@ -41,6 +42,7 @@ class App extends React.Component {
     render () {
         return (
             <div>
+                <Navbar/>
                 <Content handleSubmit={this.handleSubmit}/>
             </div>    
         )
